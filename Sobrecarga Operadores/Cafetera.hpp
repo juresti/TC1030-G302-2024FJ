@@ -14,17 +14,11 @@ public:
 
     //Sobrecarga de operadores
     //No pertenecen a la clase
-    friend int operator +(Cafetera &c1,Cafetera &c2){
-        return c1.tazasXMin + c2.tazasXMin;
-    }
+    friend int operator +(Cafetera &,Cafetera &);
 
-    friend int operator +(int num,Cafetera &c){
-        return num + c.tazasXMin;
-    }
+    friend int operator +(int,Cafetera &);
 
-    friend bool operator <(Cafetera &c1,Cafetera &c2){
-        return c1.capacidad < c2.capacidad;
-    }
+    friend bool operator <(Cafetera &,Cafetera &);
 };
 
 #endif
