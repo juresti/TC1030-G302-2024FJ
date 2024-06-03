@@ -11,6 +11,9 @@ private:
 public:
     Cafetera(std::string,float,int);
     std::string toString();
+
+    //Sobrecarga de operadores
+    //No pertenecen a la clase
     friend int operator +(Cafetera &c1,Cafetera &c2){
         return c1.tazasXMin + c2.tazasXMin;
     }
